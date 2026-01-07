@@ -1,0 +1,325 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+        /* background-image:url(./Icons/Starry\ Sky\ HD\ Wallpaper.jpg); */
+}
+
+/* .circle{ */
+    /* width: 20rem;
+    height: 20rem;
+    background: linear-gradient(orange, yellow);
+    position: absolute;
+    right: 50rem;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px red;
+     animation: flow 3s ease-in-out infinite;
+}
+@keyframes flow {
+  0% {
+    transform: scale(1);
+    box-shadow:
+      0 0 20px rgba(255, 200, 0, 0.5),
+      0 0 60px rgba(255, 200, 0, 0.3);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow:
+      0 0 30px rgba(255, 200, 0, 0.8),
+      0 0 80px rgba(255, 200, 0, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 20px rgba(255, 200, 0, 0.5),
+      0 0 60px rgba(255, 200, 0, 0.3);
+  }
+} */
+ .wrapper{
+    position: relative;
+    background:linear-gradient(135deg, #124dbc, hsl(285, 96%, 45%));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(57, 54, 54);
+   
+}
+.blur-background{
+    height: 42rem;
+    width: 50rem;
+    border: 2px solid white;
+    border-radius: 14px;
+    z-index: 0;
+    position: relative;
+    top: 44rem;
+ background: rgba(255, 255, 255, 0.15);  
+     backdrop-filter: blur(10px);
+}
+h1{position: relative;
+    top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.tab-container{
+    position: relative;
+    top: 6rem;
+    color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40rem;
+    z-index: 10;
+    
+}
+
+
+.tab{
+    cursor: pointer;
+    padding: 1rem;
+   background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 14px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+        border-radius: 14px;
+
+
+}
+.tab:hover{
+        background-color: rgba(128, 128, 128, 0.457);
+
+}
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grant-location{
+    scale: 0;
+    color: beige;
+    height: 20rem;
+    position: relative;
+    top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.location-img{
+    height: 5rem;
+    width: 5rem;
+}
+.grant-t1,.grant-t2{
+    font-family: 'Poppins';
+}
+.grant-t1{
+    font-weight: bold;
+    font-size: 2rem;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+
+}
+.grant-t2{
+    font-weight: 200;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+
+}
+.btn{
+    font-family: 'poppins';
+    font-style: bold;
+    border-radius: 0.5rem;
+    color: beige;
+    cursor: pointer;
+    border: none;
+    height: 2.3rem;
+    width: 8rem;
+        border: 1px solid gray;
+
+    /* backdrop-filter:blur(2rem); */
+    background-color: rgba(128, 128, 128, 0.538);
+    transition: 0.5s ease;
+}
+.btn:hover{
+    background-color: rgba(128, 128, 128, 0.831);
+}
+
+.form-container{
+    scale: 0;
+    display: flex;
+    position: relative;
+    bottom: 11rem;
+    z-index: 6;
+justify-content: space-around;
+align-items: center;
+width: 50rem;
+}
+.search{
+       background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+     border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    position: relative;
+    left: 4rem;
+    padding: 1rem;
+    height: 2.3rem;
+    width: 23rem;
+    border-radius: 0.5rem;
+    color: beige;
+}
+.search:hover{
+    border: 1.5px solid rgba(255, 255, 255, 0.749);
+
+}
+input::placeholder{
+    color: beige;
+}
+.btn_search{
+       background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+    right: 4.5rem;
+    border-radius: 0.5rem;
+    height: 2.3rem;
+    width: 6rem;
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+.btn_search:hover{
+border: 1.5px solid rgba(255, 255, 255, 0.749);
+}
+.search-img{
+    height: 2rem;
+}
+
+.loading-screen-container{
+    scale: 0;
+    position: relative;
+    bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30rem;
+    width: 30rem;
+}
+.loading-icon{
+    height: 10rem;
+    width: 10rem;
+}
+.loading-text{
+    position: relative;
+    bottom: 8rem;
+    color: beige;
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.user-info-container{
+    scale: 0;
+    position: relative;
+    bottom: 50rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 40rem;
+width: 50rem;
+}
+.city-name{
+    color: beige;
+    font-family: 'poppins';
+
+font-size: 1.5rem;
+}
+.name{
+    display: flex;
+    width: 10rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.country-icon{
+    width: 2rem;
+    height: 2rem;
+}
+.weather-desc{
+    font-family: 'poppins';
+    color: beige;
+    position: relative;
+    top: 2rem;
+}
+.weather-icon{
+    position: relative;
+    top: 1.5rem;
+    height: 10rem;
+    width: 10rem;
+}
+.temp{
+    font-family: 'poppins';
+    color: beige;
+    position: relative;
+    font-weight: bolder;
+    font-size: 2rem;
+    right: 2rem;
+}
+
+.degree{
+     font-family: 'poppins';
+    color: beige;
+    position: relative;
+    font-weight: bolder;
+    bottom: 3rem;
+    left: 3rem;
+    
+    font-size: 2rem;
+    
+}
+
+.parameter-container{
+
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.parameter img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.parameter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 10rem;
+    height: 8rem;
+
+    color: beige;
+    font-family: 'Poppins', sans-serif;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 14px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.active{
+    scale: 1;
+}
